@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My title</title>
+</head>
+<body>
+    <script>
+        // 객체는 행위와 속성을 가진다
+        var person = {
+            name : "이윤지", // property = 속성
+            age : 30, // 속성
+            gender : "female",
+            address : "경기도 의정부시",
+            walking : function() { // 행위
+                document.write("안녕 내 이름은" + this.name + "야~");
+            }
+        }
+        
+        person.walking();
+        document.write(person.name);
+    </script>
+</body>
+</html>
