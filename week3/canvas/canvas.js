@@ -1,12 +1,15 @@
 const canvas = document.getElementById('draw');
 const context = canvas.getContext('2d');
 
+// 캔버스 크기 설정
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-context.strokeStyle = '#000000';
-context.lineJoin = 'round';
-context.lineCap = 'round';
-context.lineWidth = 10;
+
+// 펜 설정
+context.strokeStyle = '#000000'; // 선 색상
+context.lineJoin = 'round'; // 선이 꺾이는 부분의 모양
+context.lineCap = 'round'; // 선 끝부분의 모양
+context.lineWidth = 10; // 선 굵기
 
 var isDrawing = false; // 현재 그림을 그리는 중인지
 var lastX = 0; // 마지막 x 좌표
